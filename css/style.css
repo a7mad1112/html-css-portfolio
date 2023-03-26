@@ -1,0 +1,49 @@
+/* Start Variables */
+:root {
+  --blue-color: #4665dd;
+  --dark-color: #282c35;
+
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--dark-color, #282c35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+ul {
+  list-style: none;
+}
+.gradient-text {
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg,#3b5bdb,#fff,#3b5bdb,#fff);
+  background-size: 100%;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+/* End Global Rules */
