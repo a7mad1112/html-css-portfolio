@@ -124,6 +124,7 @@ section {
   top: 0;
   left: 0;
   padding: 17px 0;
+  z-index: 999;
 }
 
 .header .header-content {
@@ -442,7 +443,7 @@ label[for="menu-icon"] span {
 
 .main-section .contact-btn {
   margin: 33px 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .main-section .main-img-box {
