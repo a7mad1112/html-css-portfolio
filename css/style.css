@@ -896,3 +896,20 @@ display: grid;
   }
 }
 /* EndContact Form */
+
+/* start Footer  */
+.footer {
+  padding: 25px 0;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+.footer .top-arrow a {
+  color: var(--blue-color);
+  font-size: 1.7rem;
+}
+
+.footer .icons {
+  border-top: 1px dashed #fff;
+  padding-top: 15px;
+}
+/* End Footer */
