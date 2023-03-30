@@ -215,7 +215,7 @@ section {
 
 @media (max-width: 850px) {
   .header .header-content nav {
-    display: none;
+    /* display: none; */
   }
 
   .header .header-content .logo {
@@ -324,6 +324,7 @@ label[for="menu-icon"] span {
   z-index: 999;
 }
 
+
 #menu-icon:checked+label+nav ul {
   flex-direction: column;
   opacity: 1;
@@ -340,7 +341,7 @@ label[for="menu-icon"] span {
 @media (max-width: 850px) {
   #menu-icon+label+nav {
     position: fixed;
-    display: none;
+    /* display: none; */
     top: 0;
     left: 0;
     width: 100%;
@@ -633,12 +634,12 @@ display: grid;
 }
 
 .projects-section .d-grid .project:hover {
-  /* transform: translateY(4px); */
-  margin-top: -4px;
+  transform: translateY(-4px);
   box-shadow: none;
 }
 .projects-section img {
   width: 100%;
+  display: block;
 }
 
 .project .project-btns {
@@ -648,6 +649,7 @@ display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-content: space-around;
+  margin: 0;
 }
 .project .project-btns a {
   background-color: var(--blue-color);
