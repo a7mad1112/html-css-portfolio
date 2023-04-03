@@ -350,6 +350,11 @@ label[for="menu-icon"] span {
     width: 100%;
     height: 100%;
     z-index: 999;
+    visibility: hidden;
+  }
+
+  #menu-icon:checked+label+nav {
+    visibility: visible;
   }
 
   nav ul {
