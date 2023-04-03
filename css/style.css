@@ -173,6 +173,7 @@ section {
   position: absolute;
   z-index: -1;
   left: 38px;
+  transition: var(--short-trans, 0.3s);
 }
 
 .header .header-content .logo .mode-toggler.light .ball {
@@ -982,3 +983,83 @@ label[for="menu-icon"] span {
 }
 
 /* End Footer */
+
+/* Light Mode */
+/* Light mode Styling */
+.light {
+  background-color: #ffffff !important;
+}
+
+.light header {
+  background-color: #ffffff !important;
+}
+
+.light .header nav ul li a {
+  color: #172c66;
+}
+
+.light .contact-btn::before {
+  border-color: var(--dark-color);
+}
+
+.light .contact-btn::after {
+  border-color: var(--dark-color);
+}
+
+
+.light .header .header-content .logo .mode-toggler .ball.left {
+  left: -5px !important;
+}
+
+.light .gradient-text {
+  background-image: linear-gradient(to right, #213fb9, #001858, #3b5bdb, #001858, #001858);
+}
+
+.light .info-section .content .info-list li span ,
+.light p,
+.light .icon-event:hover {
+  color: #172c66;
+}
+
+.light #repos-container a {
+  color: #172c66;
+}
+
+.light .skill {
+  box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+  background-color: hsl(0deg 7% 89% / 14%);
+}
+
+.light .skill:hover {
+  background-color: #fff;
+}
+
+.light .skill span {
+  color: #172c66;
+}
+
+.light footer {
+  border-top: 1px solid #001858;
+}
+
+.light .isBorder {
+  border-color: #001858;
+}
+
+.light .menu-icon span {
+  background-color: #001858;
+}
+
+.light .menu-icon span {
+  background-color: #001858 !important;
+}
+
+.light label[for="menu-icon"] span {
+  background-color: var(--dark-color);
+}
+
+@media (max-width: 850px) {
+  .light nav ul {
+    background: radial-gradient(circle, #8696d4, #7382b1, #626e8f, #525a6e, #44474e);
+  }
+}
