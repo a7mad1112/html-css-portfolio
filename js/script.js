@@ -22,14 +22,20 @@ async function getRepos() {
     .then((maxRepos) => displayRepos(maxRepos));
 }
 
+function repoTemplate(repo) {
+  console.log(repo);
+  return `<div class="project">
+  <a class="skill" href=${repo.html_url} target="_blank">
+    <span>${repo.name}</span>
+  </a>
+</div>
+  `;
+}
+
 function displayRepos(repos) {
-  let container = document.getElementById("repos-container");
-  let template = "Top Stars Repositories: <br>";
-  repos.forEach((repo) => {
-    template += `
-    <a target="_blank" href="${repo.html_url}">${repo.name}</a> 
-    `;
-  });
+  const container = document.getElementById("repos-container");
+  let template = "";
+  repos.forEach((repo) => (template += repoTemplate(repo)));
   container.innerHTML = template;
 }
 

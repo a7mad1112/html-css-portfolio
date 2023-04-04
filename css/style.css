@@ -660,7 +660,8 @@ label[for="menu-icon"] span {
   display: grid;
 }
 
-.projects-section .d-grid {
+.projects-section .d-grid,
+.repos-section .d-grid {
   justify-content: space-around;
   column-gap: 55px;
   row-gap: 70px;
@@ -731,7 +732,8 @@ label[for="menu-icon"] span {
 
 
 @media (max-width: 767px) {
-  .projects-section .d-grid {
+  .projects-section .d-grid,
+  .repos-section .d-grid {
     grid-template-columns: repeat(1, minmax(200px, 300px))
   }
 }
@@ -758,7 +760,7 @@ label[for="menu-icon"] span {
   flex-direction: column;
   box-shadow: 0 5px 20px rgb(255 255 255 / 20%);
   border-radius: 50%;
-  padding: 0;
+  padding: 10px;
   height: 150px;
   width: 150px;
   cursor: pointer;
@@ -966,6 +968,13 @@ label[for="menu-icon"] span {
 }
 
 /* EndContact Form */
+
+/* Start Top Repos */
+.repos-section {
+  text-align: center;
+}
+
+/* End Top Repos */
 
 /* start Footer  */
 .footer {
