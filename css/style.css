@@ -522,7 +522,9 @@ label[for="menu-icon"] span {
   color: var(--blue-color, #3b5bdb);
   cursor: pointer;
   font-size: 40px;
-  transition: var(--short-trans, 0.4s);
+  transition-duration: var(--short-trans, 0.3s);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .social-icons .icons i:hover {
