@@ -1,4 +1,4 @@
-#html-css-protfolio
+# html-css-protfolio
 
 ##About
 This repository contains the source code for a small portfolio website that showcases my skills as a front-end developer. The website is built using HTML, CSS, and some JavaScript, and is designed to be both attractive and responsive.
