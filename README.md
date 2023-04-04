@@ -4,7 +4,7 @@
 This repository contains the source code for a small portfolio website that showcases my skills as a front-end developer. The website is built using HTML, CSS, and some JavaScript, and is designed to be both attractive and responsive.
 
 ## Key Features
-- Displaying top GitHub Repos: Displaying top GitHub repositories directly on the website, which allows visitors to easily see my best work and get a sense of my coding style and expertise. The two most popular repositories are automatically selected based on stars, and are displayed on the homepage with links to live sites and code repositories. This feature also demonstrates my ability to work with popular tools and technologies and contribute to open-source projects, adding significant value and distinguishing the website from others.
+- Displaying top GitHub Repos: Displaying top GitHub repositories directly on the website, which allows visitors to easily see my best work and get a sense of my coding style and expertise. The two most popular repositories are automatically selected based on stars, and are displayed with links to live sites and code repositories. This feature also demonstrates my ability to work with popular tools and technologies and contribute to open-source projects, adding significant value and distinguishing the website from others.
 - Front-end Development: The website is designed using HTML, CSS, and some JavaScript to create an engaging and user-friendly experience for visitors.
 - Hosting: The website is deployed using GitHub Pages, making it easy to share and access online.
 - Version Control: The project is managed using Git and GitHub, allowing me to keep track of changes made to the code and collaborate with others.
