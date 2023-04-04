@@ -21,6 +21,13 @@ In addition to the key features mentioned above, the website also includes:
 - Resume/CV: A downloadable version of my resume or CV.
 - Contact: A form and/or email address for potential clients or employers to contact me.
 
+## Author
+- Name: Ahmed Alawneh
+- Email: ahmalawneh79@gmail.com
+
+## Contributor
+- Name: Faris Abuali
+
 ## Acknowledgements
 I am grateful to Foothill Technology Solutions for providing me with the opportunity to participate in this internship cycle, and for their support throughout the development of this project.
 
