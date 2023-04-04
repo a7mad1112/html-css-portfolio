@@ -993,6 +993,15 @@ label[for="menu-icon"] span {
   padding-top: 15px;
 }
 
+
+footer p {
+  margin-top: 20px;
+}
+footer a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 /* End Footer */
 
 /* Light Mode */
@@ -1051,6 +1060,9 @@ label[for="menu-icon"] span {
 
 .light footer {
   border-top: 1px solid #001858;
+}
+.light footer a {
+  color: #001858;
 }
 
 .light .isBorder {
