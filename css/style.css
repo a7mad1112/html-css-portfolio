@@ -4,8 +4,8 @@
   --dark-color: #282c35;
   --short-trans: 0.4s;
   --section-padding: 80px;
-  --nav-load-time: 300ms;
-  --nav-link-load-time: 500ms;
+  --nav-load-time: 500ms;
+  --nav-link-load-time: 700ms;
 }
 
 /* End Variables */
@@ -79,7 +79,7 @@ section {
 
 h1,
 h2 {
-  animation: article-load 0.8s ease-in 800ms;
+  animation: article-load 1200ms ease-in 800ms;
   animation-fill-mode: forwards;
   transform: translateY(-20px);
   opacity: 0;
@@ -223,9 +223,9 @@ header.header {
 
 .header .header-content nav ul a {
   color: #fff;
-  font-size: 22px;
+  font-size: 21px;
   text-transform: capitalize;
-  transition: var(--short-trans, 0.3s);
+  transition: 0.4s;
   display: inline-block;
 }
 
@@ -249,7 +249,7 @@ header.header {
     transform: scale(0);
   }
 
-  90% {
+  80% {
     transform: scale(1.1);
   }
 
@@ -450,7 +450,7 @@ label[for="menu-icon"] span {
 
 /* Start Scroll Bar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track {
@@ -831,7 +831,6 @@ label[for="menu-icon"] span {
   padding: 10px;
   height: 150px;
   width: 150px;
-  cursor: pointer;
   transition: 0.3s;
   gap: 1rem;
 }
