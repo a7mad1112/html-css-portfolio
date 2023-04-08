@@ -4,6 +4,8 @@
   --dark-color: #282c35;
   --short-trans: 0.4s;
   --section-padding: 80px;
+  --nav-load-time: 300ms;
+  --nav-link-load-time: 500ms;
 }
 
 /* End Variables */
@@ -73,6 +75,25 @@ section {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 5rem;
+}
+
+h1,
+h2 {
+  animation: article-load 0.8s ease-in 800ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+@keyframes article-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* End Global Rules */
@@ -180,6 +201,20 @@ section {
   left: -4px;
 }
 
+header.header {
+  animation: nav-load var(--nav-load-time) ease-out;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .header .header-content nav ul {
   display: flex;
   align-items: center;
@@ -196,7 +231,34 @@ section {
 
 .header .header-content nav ul a:not(.contact-btn):hover {
   transform: translateY(-2px);
+  color: var(--blue-color, #2a47b1);
 }
+
+.header .header-content nav ul li {
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+
+@keyframes nav-link-load {
+  0% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 @media (max-width: 1000px) {
   .header .header-content nav ul {
@@ -737,6 +799,7 @@ label[for="menu-icon"] span {
 
 
 @media (max-width: 767px) {
+
   .projects-section .d-grid,
   .repos-section .d-grid {
     grid-template-columns: repeat(1, minmax(200px, 300px))
@@ -1002,11 +1065,13 @@ label[for="menu-icon"] span {
 footer p {
   margin-top: 20px;
 }
+
 footer a {
   color: #fff;
   font-size: 0.9rem;
   font-weight: bold;
 }
+
 /* End Footer */
 
 /* Light Mode */
@@ -1040,7 +1105,7 @@ footer a {
   background-image: linear-gradient(to right, #213fb9, #001858, #3b5bdb, #001858, #001858);
 }
 
-.light .info-section .content .info-list li span ,
+.light .info-section .content .info-list li span,
 .light p,
 .light .icon-event:hover {
   color: #172c66;
@@ -1066,6 +1131,7 @@ footer a {
 .light footer {
   border-top: 1px solid #001858;
 }
+
 .light footer a {
   color: #001858;
 }
