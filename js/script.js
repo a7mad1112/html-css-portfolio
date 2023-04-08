@@ -23,7 +23,7 @@ async function getRepos() {
 }
 
 function repoTemplate(repo) {
-  console.log(repo);
+  // console.log(repo);
   return `<div class="project">
   <a class="skill" href=${repo.html_url} target="_blank">
     <span>${repo.name}</span>
@@ -82,3 +82,24 @@ function moveBall() {
   if (displayMode === "light") ball.classList.add("left");
   else ball.classList.remove("left");
 }
+
+/* Toggle active nav element */
+const navLinks = document.querySelectorAll("header nav ul li a");
+
+window.addEventListener("scroll", () => {
+  let fromTop = window.scrollY;
+  let buffer = 300;
+
+  navLinks.forEach((link) => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop - buffer <= fromTop &&
+      section.offsetTop + section.offsetHeight - buffer > fromTop
+    ) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});

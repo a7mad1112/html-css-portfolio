@@ -535,6 +535,11 @@ label[for="menu-icon"] span {
 /* End Main Section (Home) */
 
 /* Start Info Section */
+
+.active {
+  color: var(--blue-color, #2a47b1) !important;
+}
+
 .info-section .content {
   flex-basis: 50%;
 }
